@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>HangMan</title>
+  </head>
+  <body>
+    <section class="section1" style="display: block">
+      <div class="container">
+        <h1>HangMan</h1>
+      </div>
+
+      <div id="button">
+        <button class="button"><p>Play</p></button>
+      </div>
+
+      <div class="hangman">
+        <img
+          src="./assets/img/hangman.png"
+          alt=""
+          style="height: auto; width: 30%"
+        />
+      </div>
+    </section>
+
+    <section class="section2" style="display: none">
+      <div class="head">
+        <p class="head-hangman"><span class="theHangman">The</span> Hangman</p>
+        <p class="score">Score: <span id="myScore">0</span></p>
+      </div>
+
+      <div style="text-align: center; margin-top: 7%">
+        <p>Cities of Azerbaijan</p>
+      </div>
+
+      <div class="inputArea">
+        <p class="littleP">Guess the word</p>
+        <input type="text" class="letters" disabled />
+      </div>
+
+      <div class="lifeleft">
+        <p class="lifeCount">Life: <span class="life">6</span></p>
+      </div>
+    </section>
+
+    <section class="section3" style="display: none">
+      <div style="text-align: center; margin-top: 5%">
+        <p>You have lost</p>
+        <p style="margin-top: 3%">
+          Your score: <span class="finalResult">0</span>
+        </p>
+      </div>
+      <div id="button">
+        <button class="button2"><p>Try again</p></button>
+      </div>
+    </section>
+
+    <audio
+      id="marioRunning"
+      src="./assets/music/01 Running About.mp3"
+      style="visibility: hidden"
+    ></audio>
+    <audio
+      id="marioLost"
+      src="./assets/music/08 Miss.mp3"
+      style="visibility: hidden"
+    ></audio>
+
+    <script src="./assets/js/game.js"></script>
+  </body>
+</html>

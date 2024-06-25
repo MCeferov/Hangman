@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+
+body,
+html {
+    min-height: 100%;
+
+}
+
+body {
+    background-image: url("../img/board.jpg") ;
+    background-size: 110% 115%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+
+.button {
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+.button2 {
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+
+ p{
+    color: white;
+    font-size: 60px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.littleP {
+    color: white;
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    margin-right: 5%;
+}
+
+.hangman {
+    display: flex;
+    justify-content: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.inputArea {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-right: 20%;
+}
+
+.letters {
+    margin-left: 10px;
+    letter-spacing: 15px;
+    font-size: 34px;
+    color: whitesmoke;
+    font-weight: bolder;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+.lifeleft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.lifeCount{
+    font-size: 34px;
+}
+
+
+
+.life {
+    font-size: 34px;
+    color: whitesmoke;
+    font-weight: bolder;
+}
