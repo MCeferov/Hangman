@@ -42,8 +42,8 @@ function updateDisplay() {
 function checkLetter(letter) {
   let updated = false;
   for (let i = 0; i < currentWord.length; i++) {
-    if (currentWord[i] === letter) {
-      displayedWord = displayedWord.substr(0, i) + letter + displayedWord.substr(i + 1);
+    if (currentWord[i].toUpperCase() === letter.toUpperCase()) {
+      displayedWord = displayedWord.substring(0, i) + letter.toUpperCase() + displayedWord.substring(i + 1);
       updated = true;
     }
   }
@@ -80,7 +80,7 @@ tryAgainButton.addEventListener("click", () => {
 
 document.addEventListener("keydown", (event) => {
   if (section2.style.display === "block" && event.key.length === 1 && /[a-zA-Z]/.test(event.key)) {
-    checkLetter(event.key.toUpperCase());
+    checkLetter(event.key);
   }
 });
 
